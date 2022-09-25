@@ -165,33 +165,33 @@ const rules: KarabinerRules[] = [
           },
         ],
       },
-      {
-        type: "basic",
-        description: "Disable CMD + Tab to force Hyper Key usage",
-        from: {
-          key_code: "tab",
-          modifiers: {
-            mandatory: ["left_command"],
-          },
-        },
-        to: [
-          {
-            key_code: "tab",
-          },
-        ],
-      },
+      //   {
+      //     type: "basic",
+      //     description: "Disable CMD + Tab to force Hyper Key usage",
+      //     from: {
+      //       key_code: "tab",
+      //       modifiers: {
+      //         mandatory: ["left_command"],
+      //       },
+      //     },
+      //     to: [
+      //       {
+      //         key_code: "tab",
+      //       },
+      //     ],
+      //   },
     ],
   },
   ...createHyperSubLayers({
-    // o = "Open" applications
-    p: {
-      g: app("Google Chrome"),
+    // a= "Applications"
+    a: {
+      c: app("Google Chrome"),
       v: app("Visual Studio Code"),
       d: app("Discord"),
       f: app("Figma"),
       s: app("Slack"),
       n: app("Notion"),
-      t: app("iTerm2"),
+      t: app("iTerm"),
       m: app("Apple Music"),
     },
 
