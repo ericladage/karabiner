@@ -1,9 +1,3 @@
-# @mxstbr's Karabiner Elements configuration
-
-You probably don't want to use my exact configuration, as it's optimized for my personal style & usage. However, if you like TypeScript and want your Karabiner configuration maintainable & type-safe, you probably want to use the custom configuration DSL / generator I created in `rules.ts` and `utils.ts`.
-
-Best way to go about using this if you want to? Probably delete all the sublayers in `rules.ts` and add your own based on your own needs!
-
 ## Installation
 
 1. Install & start [Karabiner Elements](https://karabiner-elements.pqrs.org/)
@@ -15,17 +9,15 @@ Best way to go about using this if you want to? Probably delete all the sublayer
 ## Development
 
 ```
-yarn run build
+npm run build
 ```
 
 builds the `karabiner.json` from the `rules.ts`.
 
 ```
-yarn run watch
+npm run watch
 ```
 
 watches the TypeScript files and rebuilds whenever they change.
 
-## License
-
-Copyright (c) 2022 Maximilian Stoiber, licensed under the [MIT license](./LICENSE.md).
+credit to @mxstbr for skeleton
